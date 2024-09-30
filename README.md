@@ -1,8 +1,8 @@
 # pertemuan3
 
-Nama : Kintan Kinasih Mahaputri
-NIM : H1D022019
-Shift : A
+Nama : Kintan Kinasih Mahaputri;
+NIM : H1D022019;
+Shift : A;
 
 # ScreenShoot
 1. Login
