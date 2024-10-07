@@ -50,7 +50,7 @@ Shift : A
 
 2. **Proses Login**  
    - a. **Input Data untuk Login**  
-     ![Tampilan Input Login](./p5_2)  
+     ![Tampilan Input Login](./p5_2.jpg)  
      Pengguna memasukkan email dan kata sandi pada form login. Data tersebut dikirim ke API untuk proses autentikasi. Contoh kodenya:
 
      ```dart
