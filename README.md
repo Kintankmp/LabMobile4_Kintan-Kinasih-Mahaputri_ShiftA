@@ -128,7 +128,7 @@ Shift : A
 
 6. **Proses Menghapus Produk**  
    - a. **Konfirmasi Hapus Produk**  
-     ![Tampilan Konfirmasi Hapus Produk](./p5_9.jpg)  
+     ![Tampilan Konfirmasi Hapus Produk](./p5_8.jpg)  
      Saat pengguna menekan tombol hapus, sistem akan menampilkan dialog konfirmasi untuk memastikan apakah pengguna ingin menghapus produk tersebut. Contoh kodenya:
 
      ```dart
