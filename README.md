@@ -22,39 +22,9 @@ Shift : A
 
 ### Pertemuan 5
 
-1. **Tampilan Halaman Login**  
-   ![Tampilan Halaman Login](./p5_1.jpg)  
-   Menampilkan halaman login tempat pengguna memasukkan email dan kata sandi untuk masuk ke aplikasi.
-
-2. **Tampilan Halaman Registrasi**  
-   ![Tampilan Halaman Registrasi](./p5_2.jpg)  
-   Menunjukkan halaman registrasi di mana pengguna dapat mendaftarkan akun baru dengan mengisi informasi seperti nama, email, dan kata sandi.
-
-3. **Tampilan Halaman Logout**  
-   ![Tampilan Halaman Logout](./p5_3.jpg)  
-   Halaman logout yang ditampilkan saat pengguna keluar dari aplikasi.
-
-4. **Tampilan Halaman Detail Produk**  
-   ![Tampilan Halaman Detail Produk](./p5_4.jpg)  
-   Menampilkan detail produk seperti nama, deskripsi, dan harga setelah pengguna memilih salah satu produk dari daftar.
-
-5. **Tampilan Halaman Daftar Produk**  
-   ![Tampilan Halaman Daftar Produk](./p5_5.jpg)  
-   Menunjukkan daftar produk yang tersedia di toko.
-
-6. **Tampilan Halaman Tambah Produk**  
-   ![Tampilan Halaman Tambah Produk](./p5_6.jpg)  
-   Halaman ini memungkinkan pengguna menambahkan produk baru dengan mengisi kode, nama, dan harga produk.
-
-7. **Tampilan Halaman Ubah Produk**  
-   ![Tampilan Halaman Ubah Produk](./p5_7.jpg)  
-   Menampilkan form untuk mengedit data produk yang ada seperti nama, kode, dan harga produk.
-
-### Alur Penggunaan Website Toko Kita Khansa
+### Alur Penggunaan Website
 
 1. **Proses Registrasi**  
-   - a. **Input Data untuk Registrasi**  
-     ![Tampilan Input Registrasi](./p5_8.jpg)  
      Pada tahap ini, pengguna mengisi informasi registrasi, seperti nama, email, kata sandi, dan konfirmasi kata sandi. Data yang telah diisi akan dikirim ke server untuk disimpan dalam database. Berikut kode untuk mengirimkan data:
 
      ```dart
@@ -64,9 +34,7 @@ Shift : A
        password: _passwordTextboxController.text
      );
      ```
-
-   - b. **Pop-up Registrasi Berhasil**  
-     ![Tampilan Pop Up Registrasi Berhasil](./p5_9.jpg)  
+     ![Tampilan Pop Up Registrasi Berhasil](./p5_1.jpg)  
      Setelah proses registrasi selesai, pengguna akan melihat pop-up notifikasi yang menandakan bahwa pendaftaran berhasil. Berikut contoh kode untuk menampilkan pop-up:
 
      ```dart
@@ -82,7 +50,7 @@ Shift : A
 
 2. **Proses Login**  
    - a. **Input Data untuk Login**  
-     ![Tampilan Input Login](./inputlogin.jpg)  
+     ![Tampilan Input Login](./p5_2)  
      Pengguna memasukkan email dan kata sandi pada form login. Data tersebut dikirim ke API untuk proses autentikasi. Contoh kodenya:
 
      ```dart
@@ -93,7 +61,7 @@ Shift : A
      ```
 
    - b. **Pop-up Login Gagal**  
-     ![Tampilan Pop Up Login Gagal](./popupgagallogin.jpg)  
+     ![Tampilan Pop Up Login Gagal](./p5_3.jpg)  
      Jika login gagal (misalnya, jika email atau kata sandi salah), pop-up notifikasi akan muncul untuk memberi tahu pengguna bahwa login gagal. Berikut kodenya:
 
      ```dart
@@ -106,20 +74,9 @@ Shift : A
      );
      ```
 
-   - c. **Login Berhasil**  
-     ![Tampilan Berhasil Login](./listproduk.jpg)  
-     Jika login berhasil, pengguna akan diarahkan ke halaman daftar produk:
-
-     ```dart
-     Navigator.pushReplacement(
-       context,
-       MaterialPageRoute(builder: (context) => const ProdukPage())
-     );
-     ```
-
 3. **Proses Menambah Produk Baru**  
    - a. **Input Data Produk**  
-     ![Tampilan Input Tambah Data Produk](./inputtambahdata.jpg)  
+     ![Tampilan Input Tambah Data Produk](./p5_4.jpg)  
      Pengguna dapat menambahkan produk baru dengan mengisi informasi seperti kode produk, nama, dan harga. Data ini akan dikirim ke server dan disimpan di database. Contoh kodenya:
 
      ```dart
@@ -133,12 +90,12 @@ Shift : A
      ```
 
    - b. **Produk Berhasil Ditambahkan**  
-     ![Tampilan Produk Berhasil Ditambahkan](./berhasiltambahdata.jpg)  
+     ![Tampilan Produk Berhasil Ditambahkan](./p5_5.jpg)  
      Notifikasi akan muncul setelah produk berhasil ditambahkan ke dalam database.
 
 4. **Proses Melihat Detail Produk**  
    - a. **Melihat Detail Produk**  
-     ![Tampilan Detail Produk](./detailproduk.jpg)  
+     ![Tampilan Detail Produk](./p5_6.jpg)  
      Pengguna dapat melihat detail dari suatu produk dengan mengklik produk tersebut di daftar produk. Berikut adalah cara navigasi ke halaman detail produk:
 
      ```dart
@@ -152,7 +109,7 @@ Shift : A
 
 5. **Proses Mengubah Produk**  
    - a. **Input Data Ubah Produk**  
-     ![Tampilan Input Ubah Produk](./ubahproduk.jpg)  
+     ![Tampilan Input Ubah Produk](./p5_7.jpg)  
      Pengguna dapat mengedit informasi produk, seperti nama, kode, atau harga produk, kemudian menyimpan perubahan tersebut ke database. Berikut kodenya:
 
      ```dart
@@ -167,12 +124,11 @@ Shift : A
      ```
 
    - b. **Produk Berhasil Diubah**  
-     ![Tampilan Produk Berhasil Diubah](./berhasilubahproduk.jpg)  
      Menampilkan notifikasi bahwa produk berhasil diubah.
 
 6. **Proses Menghapus Produk**  
    - a. **Konfirmasi Hapus Produk**  
-     ![Tampilan Konfirmasi Hapus Produk](./hapusproduk.jpg)  
+     ![Tampilan Konfirmasi Hapus Produk](./p5_9.jpg)  
      Saat pengguna menekan tombol hapus, sistem akan menampilkan dialog konfirmasi untuk memastikan apakah pengguna ingin menghapus produk tersebut. Contoh kodenya:
 
      ```dart
@@ -197,13 +153,12 @@ Shift : A
      );
      ```
 
-   - b. **Produk Berhasil Dihapus**  
-     ![Tampilan Produk Berhasil Dihapus](./berhasilhapusproduk.jpg)  
+   - b. **Produk Berhasil Dihapus**    
      Menampilkan notifikasi bahwa produk telah berhasil dihapus dari database.
 
 7. **Proses Logout**  
    - a. **Tombol Logout**  
-     ![Tampilan Tombol Logout](./logout.jpg)  
+     ![Tampilan Tombol Logout](./p5_9.jpg)  
      Pengguna dapat keluar dari aplikasi dengan menekan tombol logout. Ini akan menghapus sesi pengguna dan mengarahkan kembali ke halaman login. Berikut adalah kodenya:
 
      ```dart
