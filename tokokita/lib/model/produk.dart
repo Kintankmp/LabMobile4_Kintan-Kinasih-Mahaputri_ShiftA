@@ -8,19 +8,10 @@ class Produk {
 
   factory Produk.fromJson(Map<String, dynamic> obj) {
     return Produk(
-      id: obj['id'] as int?, // Pastikan untuk melakukan cast jika perlu
-      kodeProduk: obj['kode_produk'] as String?,
-      namaProduk: obj['nama_produk'] as String?,
-      hargaProduk: obj['harga'] as int?, // Pastikan ini sesuai tipe data
+      id: obj['id'] != null ? int.parse(obj['id'].toString()) : null, // Parse id as int
+      kodeProduk: obj['kode_produk'],
+      namaProduk: obj['nama_produk'],
+      hargaProduk: obj['harga'] != null ? int.parse(obj['harga'].toString()) : null, // Parse harga as int
     );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-      'kode_produk': kodeProduk,
-      'nama_produk': namaProduk,
-      'harga': hargaProduk,
-    };
   }
 }
